@@ -16,6 +16,7 @@ public class CastingEx2 {
 		b = -2;
 		i = (int) b;
 		System.out.printf("[byte -> int] b=%d -> i =%d%n",b,i);
+		 
 		
 		System.out.println("i="+Integer.toBinaryString(i));
 	}
