@@ -12,10 +12,8 @@ public class OperatorEx28 {
 
 	static String toBinaryString(int x) {
 		String zero = "00000000000000000000000000000000";
-		System.err.println("zero : " + zero.length());
 
 		String tmp = zero + Integer.toBinaryString(x);
-		System.err.println("temp : " + tmp.length());
 		
 		return tmp.substring(tmp.length() - 32); // 8
 	}
