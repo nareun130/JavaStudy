@@ -11,17 +11,10 @@ public class FlowEx5 {
 		score = scanner.nextInt();
 
 		System.out.printf("당신의 점수는 %d.%n", score);
-
-		if (score >= 90) {
-			grade = 'A';
-			opt = changeOpt(score);
-		} else if (score >= 80) {
-			grade = 'B';
-			opt = changeOpt(score);
-		} else {
-			grade = 'C';
-		}
-
+		
+		grade = changeScore(score);
+		opt = changeOpt(score);
+		
 		System.out.printf("당신의 학점은 %c%c.%n", grade, opt);
 		scanner.close();
 	}
@@ -37,5 +30,19 @@ public class FlowEx5 {
 			return opt;
 		}
 		return opt;
+	}
+
+	static char changeScore(int score) {
+		char grade = 'C';
+
+		if (score >= 90 || score == 100) {
+			grade = 'A';
+			return grade;
+		}
+		if (score >= 80) {
+			grade = 'B';
+			return grade;
+		}
+		return grade;
 	}
 }
