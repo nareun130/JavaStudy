@@ -3,15 +3,14 @@ package card;
 public class CardDeckTest {
 	public static void main(String[] args) {
 		Deck d = new Deck();
-		Card c = d.pick(0);//제일 위 카드 뽑음 
-		System.out.println("제일 위 카드 "+ c);
-	
+		Card c = d.pick(0);// 제일 위 카드 뽑음
+		System.out.println("제일 위 카드 " + c);
+
 		d.shuffle();
 		c = d.pick(0);
 		System.out.println("제일 위 카드 " + c);
 	}
-	
-	
+
 }
 
 class Card {
@@ -55,7 +54,7 @@ class Deck {
 				cardArr[i++] = new Card(k, n + 1);
 			}
 		}
-		
+
 //		for(Card card :cardArr) {
 //			System.out.println(card);
 //		}
