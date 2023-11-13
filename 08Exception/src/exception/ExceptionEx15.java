@@ -2,7 +2,10 @@ package exception;
 
 import java.io.File;
 
+
 public class ExceptionEx15 {
+	
+	//~> 실행 시 java ExceptionEx15.java "파일 이름"
 	public static void main(String[] args) {
 		File f = createFile(args[0]);
 		System.out.println(f.getName() + " 파일이 성공적으로 생성됨.");
@@ -29,7 +32,7 @@ public class ExceptionEx15 {
 		try {
 			f.createNewFile();
 		} catch (Exception e) {
-
+			
 		}
 	}
 }
