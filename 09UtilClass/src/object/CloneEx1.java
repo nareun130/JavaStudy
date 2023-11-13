@@ -1,5 +1,7 @@
 package object;
 
+import copy.Point;
+
 public class CloneEx1 {
 	public static void main(String[] args) {
 		Point original = new Point(3, 5);
@@ -32,8 +34,8 @@ class Point implements Cloneable {
 //		}
 //		return obj;
 //	}
-	
-	//* 공변 반환 타입 : 조상 메서드의 반환타입 -> 자손 클래스의 타입으로 변경
+
+	// * 공변 반환 타입 : 조상 메서드의 반환타입 -> 자손 클래스의 타입으로 변경
 	@Override
 	public Point clone() {
 		Object obj = null;
