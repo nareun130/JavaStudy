@@ -1,6 +1,5 @@
 package object;
 
-import copy.Point;
 
 public class CloneEx1 {
 	public static void main(String[] args) {
