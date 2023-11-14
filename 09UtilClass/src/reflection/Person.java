@@ -30,4 +30,9 @@ public class Person {
 	private int privateSum(int left, int right) {
 		return left + right;
 	}
+
+	@Override
+	public String toString() {
+		return "name : " + name + ", age : " + age;
+	}
 }
