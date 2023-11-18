@@ -44,7 +44,7 @@ class Circle implements Cloneable {
 	public Circle deepCopy() {
 		Object obj = null;
 		try {
-			obj = super.clone();// ~> 참족객체까지 복제하지 않는다.
+			obj = super.clone();// ~> 참조객체까지 복제하지 않는다.
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 		}
