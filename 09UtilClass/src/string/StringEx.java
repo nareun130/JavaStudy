@@ -20,7 +20,7 @@ public class StringEx {
 		System.out.println(str3 == str4);
 
 		char[] chArr = new char[0];// 길이가 0인 char 배열
-		int[] iArr = {};// 길이가 0인 int 배열
+		int[] iArr = {};// 길이가 0인 int배열
 
 	}
 }
