@@ -1,4 +1,4 @@
-package list;
+package myvector;
 
 public class MyVectorTest {
 	public static void main(String[] args) {

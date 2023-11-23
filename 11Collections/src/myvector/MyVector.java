@@ -1,4 +1,4 @@
-package list;
+package myvector;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -50,7 +50,7 @@ public class MyVector implements List {
 	public Object remove(int index) {
 		Object oldObj = null;
 
-		if (index < 0 || index <= size) {
+		if (index < 0 || index >= size) {
 			throw new IndexOutOfBoundsException("범위를 벗어남");
 		}
 		oldObj = data[index];
