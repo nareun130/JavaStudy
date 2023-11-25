@@ -15,7 +15,7 @@ public class FruitBoxEx1 {
 		// 타입 불일치
 //		Box<Grape> grapeBox = new Box<Apple>();
 
-		fruitBox.add(new Fruit());
+		fruitBox.add(new Fruit(""));
 		fruitBox.add(new Apple());
 
 		appleBox.add(new Apple());
