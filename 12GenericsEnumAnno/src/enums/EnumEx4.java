@@ -1,5 +1,6 @@
 package enums;
 
+//! MyEnum<T> 이렇게만 선언하면 ordinal()이 정의 되어 있는지 확실하지 x
 abstract class MyEnum<T extends MyEnum<T>> implements Comparable<T> {
 	static int id = 0;
 	int ordinal;
@@ -14,6 +15,7 @@ abstract class MyEnum<T extends MyEnum<T>> implements Comparable<T> {
 		ordinal = id++;
 	}
 
+	//! MyEnum<T>일 때는 이렇게 간편하게 비교 불가 -> ordinal()존재 유무 파악 힘들어서 
 	public int compareTo(T t) {
 		return ordinal - t.ordinal();
 	}
