@@ -5,7 +5,7 @@ public class ThreadEx10 implements Runnable {
 
 	public static void main(String[] args) {
 		Thread t = new Thread(new ThreadEx10());
-		t.setDaemon(true); // 이 부분이 없으면 종료 x
+		t.setDaemon(true); // 이 dee부분이 없으면 종료 x
 		//~> start전에 Demon 설정해야 함. 
 		t.start();
 
@@ -28,7 +28,7 @@ public class ThreadEx10 implements Runnable {
 		//* 3 초마다 autoSave값을 확인해서 autoSave() 실행 
 		//~> demon으로 설정 안하면 영원히 종료 x
 		while (true) {
-			try {
+			try {                                                    
 				Thread.sleep(3 * 1000);// 3초마다
 			} catch (InterruptedException e) {
 			}
