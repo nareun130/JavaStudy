@@ -60,8 +60,9 @@ class Timer implements Runnable{
 	public void run() {
 		try {
 			while(true) {
-				Thread.sleep(1000);
 				System.out.println(++count+"초 ");
+				Thread.sleep(1000);
+				
 			}
 			
 		} catch (InterruptedException e) {

@@ -33,6 +33,7 @@ public class ThreadEx16 {
 class RunImplEx16 implements Runnable {
 
 	volatile boolean suspended = false;
+	//volatile :코어가 변수의 값을 읽어올 때 캐시가 아닌 메모리에서 읽어게 한다. 
 	volatile boolean stopped = false;
 
 	@Override
@@ -41,7 +42,7 @@ class RunImplEx16 implements Runnable {
 			if (!suspended) {
 				System.out.println(Thread.currentThread().getName());
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(1000); 
 				} catch (InterruptedException e) {
 				}
 			}

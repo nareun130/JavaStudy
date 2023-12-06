@@ -10,8 +10,8 @@ public class ThreadEx19 {
 		startTime = System.currentTimeMillis();
 		
 		try {
-			th1.join();// main쓰레드가 th1의 작업이 끝날 떄까지 대기 
-			th2.join();//main쓰레드가 th2의 작업이 끝날 떄까지 대기 ~> 두 쓰레드의 작없에 소요된 시간을 출력 가능   
+			th1.join(); // main쓰레드가 th1의 작업이 끝날 떄까지 대기 
+			th2.join(); //main쓰레드가 th2의 작업이 끝날 떄까지 대기 ~> 두 쓰레드의 작없에 소요된 시간을 출력 가능   
 		} catch (InterruptedException e) {
 		}
 		System.out.print("소요시간 : "+ (System.currentTimeMillis() - ThreadEx19.startTime));
