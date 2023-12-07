@@ -57,6 +57,7 @@ class SumTask extends RecursiveTask<Long> {
 	}
 
 	long sum() {
+		
 		long tmp = 0L;
 
 		for (long i = from; i <= to; i++) {
